@@ -12,15 +12,16 @@ This project uses lot of stuff as:
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [React Query](https://react-query-v2.tanstack.com/)
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
+npm install && npm run dev
 # or
-yarn dev
+yarn && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
