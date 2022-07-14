@@ -50,6 +50,7 @@ const ListProvider: React.FC = ({ children }) => {
 
     localStorage.setItem('pokemons', JSON.stringify(newPokemonsList))
     setList(newPokemonsList)
+    toast.success('Pokemon removed from your hand!')
   }
 
   return (
