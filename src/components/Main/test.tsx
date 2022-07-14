@@ -16,6 +16,14 @@ describe('<Main />', () => {
   it('should render the colors correctly', () => {
     const { container } = render(<Main />)
 
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#fff' })
+  })
+
+  it('should render pokedex and hand', () => {
+    render(<Main />)
+
+    expect(
+      screen.getByRole('heading', { level: 3, name: /Your Hand/i })
+    ).toBeInTheDocument()
   })
 })
