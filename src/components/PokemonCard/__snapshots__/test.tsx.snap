@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PokemonCard /> should render the component 1`] = `
+.c0 {
+  background-color: #fff;
+  color: #000;
+  padding: 1.5rem 3rem;
+  text-align: left;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  border-radius: 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.c0:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c1 {
+  margin-right: 1rem;
+}
+
+.c2 {
+  color: #081837;
+  padding-bottom: 1rem;
+}
+
+.c3 {
+  background-color: #78C850;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.c4 {
+  background-color: #A040A0;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.c5 {
+  max-width: 8rem;
+  height: 8rem;
+}
+
+<main
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h1
+      class="c2"
+    >
+      bulbasaur
+    </h1>
+    <div
+      class=""
+    >
+      <span
+        class="c3"
+        color="grass"
+      >
+        grass
+      </span>
+      <span
+        class="c4"
+        color="poison"
+      >
+        poison
+      </span>
+    </div>
+  </div>
+  <img
+    alt="bulbasaur"
+    class="c5"
+    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+  />
+</main>
+`
