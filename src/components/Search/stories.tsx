@@ -6,4 +6,4 @@ export default {
   component: Search
 } as Meta
 
-export const Default: Story = () => <Search />
+export const Default: Story = () => <Search search="" setSearch={() => null} />
