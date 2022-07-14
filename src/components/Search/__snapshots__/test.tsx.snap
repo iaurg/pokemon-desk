@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Search /> should render the heading 1`] = `
+exports[`<Search /> should render the search 1`] = `
 .c0 input {
   background-color: #f4f5f5;
   border: none;
@@ -15,6 +15,7 @@ exports[`<Search /> should render the heading 1`] = `
   <input
     placeholder="Search for pokemons"
     type="text"
+    value=""
   />
 </main>
 `

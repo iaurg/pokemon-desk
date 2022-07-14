@@ -4,7 +4,7 @@ exports[`<PokemonCard /> should render the component 1`] = `
 .c0 {
   background-color: #fff;
   color: #000;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   text-align: left;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
   border-radius: 0.8rem;
@@ -22,6 +22,11 @@ exports[`<PokemonCard /> should render the component 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin: 1rem;
+  width: 220px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c0:hover {
@@ -32,7 +37,7 @@ exports[`<PokemonCard /> should render the component 1`] = `
 }
 
 .c1 {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .c2 {
@@ -59,8 +64,8 @@ exports[`<PokemonCard /> should render the component 1`] = `
 }
 
 .c5 {
-  max-width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 <main
