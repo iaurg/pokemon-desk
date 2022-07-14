@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 type ColorObject = {
   [key: string]: string
@@ -44,6 +45,10 @@ export const Wrapper = styled.main`
   }
   width: 220px;
   justify-content: space-between;
+  ${media.lessThan('small')`
+    width: 100%;
+    margin: 1rem auto;
+  `}
 `
 
 export const Content = styled.div`
