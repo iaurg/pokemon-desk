@@ -28,7 +28,7 @@ const typesColors: ColorObject = {
 export const Wrapper = styled.main`
   background-color: #fff;
   color: #000;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   text-align: left;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.8rem;
@@ -42,10 +42,12 @@ export const Wrapper = styled.main`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
+  width: 220px;
+  justify-content: space-between;
 `
 
 export const Content = styled.div`
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 `
 
 export const Name = styled.h1`
@@ -67,6 +69,6 @@ export const Type = styled.span`
 `
 
 export const Image = styled.img`
-  max-width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
 `
