@@ -1,3 +1,4 @@
+import { useList } from 'context/useList'
 import * as S from './styles'
 
 export type PokemonCardProps = {
@@ -9,11 +10,24 @@ export type PokemonCardProps = {
       name: string
     }
   }[]
+  handleRemove?: (pokemon: Omit<PokemonCardProps, 'handleRemove'>) => void
 }
 
-function PokemonCard({ name, image, types }: PokemonCardProps) {
+function PokemonCard({ name, image, types, handleRemove }: PokemonCardProps) {
+  const { addPokemon } = useList()
+
+  const handleAddPokemon = () => {
+    addPokemon({ name, image, types })
+  }
+
+  const handleRemovePokemon = () => {
+    const pokemon = { name, image, types }
+    if (!handleRemove) return
+    handleRemove(pokemon)
+  }
+
   return (
-    <S.Wrapper>
+    <S.Wrapper onClick={handleRemove ? handleRemovePokemon : handleAddPokemon}>
       <S.Content>
         <S.Name>{name}</S.Name>
         <S.Types>
