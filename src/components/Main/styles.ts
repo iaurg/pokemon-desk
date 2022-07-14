@@ -1,16 +1,12 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
-  color: #fff;
-  width: 100%;
-  height: 100%;
+  background-color: #fff;
+  color: #000;
   padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 `
 
 export const Title = styled.h1`
@@ -19,5 +15,24 @@ export const Title = styled.h1`
 
 export const Description = styled.h2`
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: normal;
+  margin-bottom: 1rem;
+`
+
+export const Content = styled.div`
+  display: grid;
+`
+
+export const Listing = styled.div`
+  margin-top: 2rem;
+`
+
+export const Hand = styled.div`
+  margin-bottom: 1rem;
+`
+
+export const HandTitle = styled.h3`
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 `
