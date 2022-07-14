@@ -1,11 +1,13 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { QueryClientProvider } from 'react-query'
+import { queryClient } from 'services/queryClient'
 
 import GlobalStyles from 'styles/global'
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <Head>
         <title>Pokedex</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
@@ -16,7 +18,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </QueryClientProvider>
   )
 }
 
